@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Creator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1> Simple Random Password Maker</h1>
+
+    <p>Choose your desired options below, the length of the random password, then make it.</p>
+
+    <label for="cb-include-numbers">Include Numbers:</label>
+    <input type="checkbox" name="cb-include-numbers" id="cb-include-numbers">
+    <br>
+
+    <label for="cb-include-uppercase">Include Lowercase Letters:</label>
+    <input type="checkbox" name="cb-include-lowercase" id="cb-include-lowercase">
+    <br>
+
+    <label for="cb-include-uppercase">Include Uppercase Letters:</label>
+    <input type="checkbox" name="cb-include-uppercase" id="cb-include-uppercase">
+    <br>
+
+    <label for="cb-include-symbols">Include Symbols:</label>
+    <input type="checkbox" name="cb-include-symbols" id="cb-include-symbols"> 
+    <br>
+
+    <label>Password Length:</label>
+    <select id="sb-pw-length">
+        <option value=8>8 characters</option>
+        <option value=12>12 characters</option>
+        <option value=16>16 characters</option>
+    </select>
+    <br>
+
+    <input type="text" id="tb-password" placeholder="Password will appear here">
+    <br>
+
+    <button id="btn-create-pw">Make Password</button>
+    <br>
+
+    <p>If there are potentially confusing characters, clarifications will be listed below.</p>
+    <span id="spn-clarification"></span>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
